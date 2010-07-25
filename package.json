@@ -46,6 +46,9 @@
     "engines": [
         "node"
     ],
+    "scripts" : {
+      "postinstall" : "./scripts/fetch_htmlparser"
+    },
     "directories": {
         "lib": "lib"
     },
