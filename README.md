@@ -1,9 +1,63 @@
 Apricot
 ===
 
-Apricot is a HTML / DOM parser, scraper for Nodejs. It is inspired by rubys hpricot. It is designed to fetch, iterate, and augment html or html fragments.
+Apricot is a HTML / DOM parser, scraper for Nodejs.
+It is inspired by [rubys hpricot](http://github.com/whymirror/hpricot) and designed to fetch, iterate, and augment html or html fragments.
 
-LICENSE
+Apricot requires [JSDom](http://github.com/tmpvar/jsdom)
+
+    npm install jsdom
+    
+Getting Started
+---
+    Apricot.parse("<p id='test'>An HTML Fragment</p>", function(doc) {
+      // Do something awesome here..
+    });
+    
+    // OR Open a remote website, or local file
+    
+    Apricot.open("http://my_awesome_website.com", function(doc) {
+      // Do something awesome here..
+    });    
+
+
+Packed with Awesomeness (API)
+---
+
+Parse and Open both return a Apricot Object, a HTML DOM, created by JSDOM, with all the power of the [Sizzle Selector Engine](http://wiki.github.com/jeresig/sizzle/), and [XUI Framework](http://github.com/silentrob/xui) for Augmentation.
+
+    Apricot.parse("<p id='test'>An HTML Fragment</p>", function(doc) {
+      doc.find("selector");     // Populates internal collection, See Sizzle selector syntax (rules)
+      doc.each(callback);       // Itterates over the collection, applying a callback to each match (element)
+      doc.remove();             // Removes all elements in the internal collection (See XUI Syntax)
+    
+      doc.inner("fragment");    // See XUI Syntax
+      doc.outer("fragment");    // See XUI Syntax    
+      doc.top("fragment");      // See XUI Syntax
+      doc.bottom("fragment");   // See XUI Syntax
+      doc.before("fragment");   // See XUI Syntax
+      doc.after("fragment");    // See XUI Syntax
+      doc.hasClass("class");    // See XUI Syntax      
+      doc.addClass("class");    // See XUI Syntax            
+      doc.removeClass("class"); // See XUI Syntax            
+      
+      doc.toHTML;               // Returns the HTML
+      doc.innerHTML;            // Returns the innerHTML of the body.
+      doc.toDOM;                // Returns the DOM representation
+      
+      // Most methods are chainable, so this works
+      doc.find("selector").addClass('foo').after(", just because");
+      
+    });
+    
+   
+TODO 
+---
+* Cleanup Code, hide privates, etc.
+* Tests
+* Add Package
+
+LICENSE (MIT)
 ---
 
 _Copyright (c) 2010 Rob Ellis_
