@@ -1,0 +1,54 @@
+{
+    "name": "apricot",
+    "version": "0.0.1",
+    "description": "Apricot is a HTML / DOM parser, scraper for Nodejs. It is inspired by rubys hpricot and designed to fetch, iterate, and augment html or html fragments.",
+    "keywords": [
+        "dom",
+        "javascript",
+        "xui"
+    ],
+    "maintainers": [
+        {
+            "name": "Rob Ellis",
+            "email": "rob@silentrob.me",
+            "web": "http://silentrob.me"
+        }
+    ],
+    "bugs": {
+        "mail": "rob@silentrob.me",
+        "web": "http://github.com/silentrob/Apricot/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://github.com/silentrob/Apricot/blob/master/LICENSE.txt"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "http://github.com/silentrob/Apricot.git"
+        }
+    ],
+    "dependencies": {
+       "jsdom": ">= 0.0.1"
+    },
+    "os": [
+        "linux",
+        "macos",
+        "win"
+    ],
+    "cpu": [
+        "x86",
+        "ppc",
+        "x86_64"
+    ],
+    "engines": [
+        "node"
+    ],
+    "directories": {
+        "lib": "lib"
+    },
+    "main": "./lib/apricot"
+}
+
