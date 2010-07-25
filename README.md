@@ -4,9 +4,12 @@ Apricot
 Apricot is a HTML / DOM parser, scraper for Nodejs.
 It is inspired by [rubys hpricot](http://github.com/whymirror/hpricot) and designed to fetch, iterate, and augment html or html fragments.
 
-Apricot requires [JSDom](http://github.com/tmpvar/jsdom)
 
-    npm install jsdom
+Install
+---
+
+    npm install apricot
+
     
 Getting Started
 ---
@@ -50,12 +53,22 @@ Parse and Open both return a Apricot Object, a HTML DOM, created by JSDOM, with 
       
     });
     
+
+Problems?
+---
+Apricot requires [JSDom](http://github.com/tmpvar/jsdom) and [htmlparser](http://github.com/davglass/node-htmlparser), these should be brought in via npm when you install apricot, but if you have problems
+
+    $ npm install jsdom
+    $ mkdir ~/.node_libraries
+    $ cd ~/.node_libraries
+    $ wget http://github.com/davglass/node-htmlparser/raw/master/node-htmlparser.js
+
+
    
 TODO 
 ---
 * Cleanup Code, hide privates, etc.
 * Tests
-* Add Package
 
 LICENSE (MIT)
 ---

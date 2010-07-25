@@ -1,4 +1,4 @@
-Apricot = require('./lib/apricot').Apricot;
+Apricot = require('../lib/apricot').Apricot;
 
 // Use Case one
 console.log("UC 1");
