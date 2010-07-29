@@ -13,13 +13,13 @@ Install
     
 Getting Started
 ---
-    Apricot.parse("<p id='test'>An HTML Fragment</p>", function(doc) {
+    Apricot.parse("<p id='test'>An HTML Fragment</p>", function(err, doc) {
       // Do something awesome here..
     });
     
     // OR Open a remote website, or local file
     
-    Apricot.open("http://my_awesome_website.com", function(doc) {
+    Apricot.open("http://my_awesome_website.com", function(err, doc) {
       // Do something awesome here..
     });    
 

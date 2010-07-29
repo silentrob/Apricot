@@ -4,19 +4,19 @@ Apricot = require('apricot').Apricot;
 console.log("UC 1");
 
 
-Apricot.parse("<p id='test'>A simple <b>test</b> string. <b>Nothing to worry about</b></p>", function(doc) {
+Apricot.parse("<p id='test'>A simple <b>test</b> string. <b>Nothing to worry about</b></p>", function(err, doc) {
   doc.find('b');
   doc.remove();
   console.log(doc.toHTML);
 });
 
-Apricot.parse("That's my <b id='test'>spoon</b> Tyler.", function(doc) {  
+Apricot.parse("That's my <b id='test'>spoon</b> Tyler.", function(err, doc) {  
   doc.find('b').inner("food");
   console.log(doc.toHTML);
   
 });
 
-Apricot.open("test.html", function(doc){
+Apricot.open("test.html", function(err, doc){
   doc.find('p');
   // el is the html Element found by find.
   doc.each(function(el){
@@ -25,7 +25,7 @@ Apricot.open("test.html", function(doc){
   
 });
 
-Apricot.open("test.html", function(doc){
+Apricot.open("test.html", function(err, doc){
   doc.find('span').removeClass('hot');
   doc.find('li').addClass('list_item').addClass('main_list');  
   console.log(doc.toHTML);
@@ -33,7 +33,7 @@ Apricot.open("test.html", function(doc){
 });
 
 // Another Example of looping
-Apricot.open('http://www.joyent.com/', function(doc){
+Apricot.open('http://www.joyent.com/', function(err, doc){
   console.log("Looping 2");
   doc.find('a');
 
@@ -44,7 +44,6 @@ Apricot.open('http://www.joyent.com/', function(doc){
   })
 
   console.log((links.unique()).join('\n\r'));      
-  
 });
 
 
