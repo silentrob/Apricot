@@ -23,6 +23,13 @@ Getting Started
       // Do something awesome here..
     });    
 
+    // Expieremental Live Code, third param.
+    // Live mode will evaluate all javascript in the context of the page.
+    
+    Apricot.open( file, callback, live_mode)
+    Apricot.open("http://my_awesome_website.com", function(doc) {
+      // Do something awesome here..
+    },true);
 
 Packed with Awesomeness (API)
 ---
