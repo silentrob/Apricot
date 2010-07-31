@@ -63,15 +63,12 @@ Parse and Open both return a Apricot Object, a HTML DOM, created by JSDOM, with 
 
 Problems?
 ---
-Apricot requires [JSDom](http://github.com/tmpvar/jsdom) and [htmlparser](http://github.com/davglass/node-htmlparser), these should be brought in via npm when you install apricot, but if you have problems
+Apricot requires [JSDom](http://github.com/tmpvar/jsdom) and [htmlparser](http://github.com/tautologistics/node-htmlparser), these should be brought in via npm when you install apricot, but if you have problems
 
     $ npm install jsdom
-    $ mkdir ~/.node_libraries
-    $ cd ~/.node_libraries
-    $ wget http://github.com/davglass/node-htmlparser/raw/master/node-htmlparser.js
+    $ npm install htmlparser    
 
 
-   
 TODO 
 ---
 * Cleanup Code, hide privates, etc.

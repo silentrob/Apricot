@@ -1,4 +1,4 @@
-Apricot = require('../lib/apricot').Apricot;
+Apricot = require('apricot').Apricot;
 
 Apricot.open("live.html", function(doc) {
 
