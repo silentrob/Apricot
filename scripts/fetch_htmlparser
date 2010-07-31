@@ -1,6 +1,0 @@
-#!/bin/sh
-
-mkdir -p ~/.node_libraries
-cd ~/.node_libraries
-wget http://github.com/davglass/node-htmlparser/raw/master/node-htmlparser.js
-echo "Done, Thanks Dave!"
