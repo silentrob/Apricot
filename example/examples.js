@@ -10,7 +10,7 @@ Apricot.parse("<p id='test'>A simple <b>test</b> string. <b>Nothing to worry abo
   console.log(doc.toHTML);
 });
 
-Apricot.parse("That's my <b id='test'>spoon</b> Tyler.", function(err, doc) {  
+Apricot.parse("That's my <b id='test'>spoon</b> Tyler.", function(err,doc) {  
   doc.find('b').inner("food");
   console.log(doc.toHTML);
   

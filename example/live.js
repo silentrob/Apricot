@@ -1,6 +1,6 @@
 Apricot = require('apricot').Apricot;
 
-Apricot.open("live.html", function(doc) {
+Apricot.open("live.html", function(err,doc) {
 
   doc.find('li:last').each(function(el){
     console.log(el.outerHTML);
