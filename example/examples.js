@@ -1,10 +1,11 @@
-Apricot = require('apricot').Apricot;
+Apricot = require('../lib/apricot').Apricot;
 
 // Use Case one
 console.log("UC 1");
 
 
-Apricot.parse("<p id='test'>A simple <b>test</b> string. <b>Nothing to worry about</b></p>", function(err, doc) {
+Apricot.parse("<p id='test'>A simple <b>test</b> string. <b>Nothing to worry about</b></p>", function(err,doc) {
+
   doc.find('b');
   doc.remove();
   console.log(doc.toHTML);
