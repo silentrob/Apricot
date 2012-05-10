@@ -37,12 +37,14 @@
     "os": [
         "linux",
         "macos",
+        "darwin",
         "win"
     ],
     "cpu": [
         "x86",
         "ppc",
-        "x86_64"
+        "x86_64",
+        "x64"
     ],
     "engines": [
         "node"
