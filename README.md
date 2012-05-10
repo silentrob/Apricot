@@ -74,6 +74,7 @@ Contributors
 * lancefisher
 * brog45
 * vrutberg 
+* chandlerkent
 
 TODO 
 ---
