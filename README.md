@@ -68,6 +68,12 @@ Apricot requires [JSDom](http://github.com/tmpvar/jsdom) and [htmlparser](http:/
     $ npm install jsdom
     $ npm install htmlparser    
 
+Contributors
+---
+* alexkappa 
+* lancefisher
+* brog45
+* vrutberg 
 
 TODO 
 ---
