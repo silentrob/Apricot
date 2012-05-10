@@ -75,6 +75,7 @@ Contributors
 * brog45
 * vrutberg 
 * chandlerkent
+* jamesaduncan
 
 TODO 
 ---
