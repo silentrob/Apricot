@@ -1,4 +1,4 @@
-Apricot = require('apricot').Apricot;
+Apricot = require('../lib/apricot').Apricot;
 
 // Use Case one
 console.log("UC 1");
@@ -33,7 +33,7 @@ Apricot.open("test.html", function(err, doc){
 });
 
 // Another Example of looping
-Apricot.open('http://www.joyent.com/', function(err, doc){
+Apricot.open('http://www.silentrob.me', function(err, doc){
   console.log("Looping 2");
   doc.find('a');
 
