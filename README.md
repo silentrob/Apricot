@@ -34,7 +34,7 @@ Getting Started
 Packed with Awesomeness (API)
 ---
 
-Parse and Open both return a Apricot Object, a HTML DOM, created by JSDOM, with all the power of the [Sizzle Selector Engine](http://wiki.github.com/jeresig/sizzle/), and [XUI Framework](http://github.com/silentrob/xui) for Augmentation.
+Parse and Open both return a Apricot Object, a HTML DOM, created by JSDOM, with all the power of the [Sizzle Selector Engine](http://github.com/jquery/sizzle/wiki/Sizzle-Home), and [XUI Framework](http://github.com/silentrob/xui) for Augmentation.
 
     Apricot.parse("<p id='test'>An HTML Fragment</p>", function(doc) {
       doc.find("selector");     // Populates internal collection, See Sizzle selector syntax (rules)
